@@ -2,15 +2,19 @@
 This Project is a Spring based Rest service  which involves Transformers Fight ( Autobots &amp; Decepticons ).Based on business rules, the winner and the survivors are defined..
 
 Overview
+
 The goal of this Project is to create a Java RESTful API.  API will allow the
 following main functionality:
+
     ● Create a Transformer
     ● Update a Transformer
     ● Delete a Transformer
     ● List Transformers
     ● Given a list of Transformer IDs, determine the winning team
     Transformer definition:
+    
 Each Transformer has the following criteria (ranked from 1 to 10) on their tech spec:
+
     ● Strength
     ● Intelligence
     ● Speed
@@ -19,16 +23,19 @@ Each Transformer has the following criteria (ranked from 1 to 10) on their tech 
     ● Courage
     ● Firepower
     ● Skill
+    
 The “overall rating” of a Transformer is the following formula: (Strength + Intelligence + Speed +
 Endurance + Firepower).
 Each Transformer must either be an Autobot or a Decepticon.
 Determining winning team:
 Your API should take as input a list of Transformer IDs and based on input returns:
-    1. The number of battles
 
+    1. The number of battles
     2. The winning team
     3. The surviving members of the losing team
+    
 The basic rules of the battle are:
+
     ● The transformers are split into two teams based on if they are Autobots or Decepticons
     ● The teams should be sorted by rank and faced off one on one against each other in
     order to determine a victor, the loser is eliminated.
@@ -51,12 +58,15 @@ The basic rules of the battle are:
 
 
 Example:
+
 For example, given the following input:
+
 Soundwave, D, 8,9,2,6,7,5,6,10
 Bluestreak, A, 6,6,7,9,5,2,9,7
 Hubcap: A, 4,4,4,4,4,4,4,4
 
 The output should be:
+
 1 battle
 Winning team (Decepticons): Soundwave
 Survivors from the losing team (Autobots): Hubcap
