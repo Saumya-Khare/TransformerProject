@@ -3,21 +3,7 @@ This Project is a Spring based Rest service  which involves Transformers Fight (
 All required REST Services can be viewed in Integrated swagger UI .
 
 Swagger UI: http://localhost:8080/swagger-ui.html
-
-Sample Request:
-
-{
-"teamName": "Soundwave",
-"type": "D",
-"strength": 8,
-"intelligence": 9,
-"speed": 2,
-"endurance": 6,
-"rank": 7,
-"courage": 5,
-"firepower": 6,
-"skill": 10
-}
+The Project Documentation file has all the Sample Json Request.
 
 Assumptions:
 
